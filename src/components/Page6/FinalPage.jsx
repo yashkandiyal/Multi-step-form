@@ -38,7 +38,7 @@ const FinalPage = () => {
             <br /> Build your foundational <br /> skills in algebra, geometry,
             <br /> and probability.
           </p>
-          <img src={AdvancedMaths} alt="" className="h-20 mb-4" />
+          <img src={AdvancedMaths} alt="" className="h-20 mb-4" loading="lazy"/>
         </div>
       </div>
     </div>

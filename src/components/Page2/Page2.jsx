@@ -96,7 +96,7 @@ const OptionButton = ({ icon, text, selected, onClick }) => {
         selected && "bg-gray-200"
       }`}
       onClick={onClick}>
-      <img src={icon} alt="" className="h-9" />
+      <img src={icon} alt="" className="h-9" loading="lazy" />
       <p>{text}</p>
     </button>
   );

@@ -87,7 +87,7 @@ const OptionButton = ({ text, description, onClick, selected,icon }) => {
       }`}
       onClick={onClick}
       style={{ cursor: "pointer" }}>
-      <img src={icon} alt="" className="h-24" />
+      <img src={icon} alt="" className="h-24" loading="lazy"/>
       <div>
         <h1 className="font-medium">{text}</h1>
       <p className="text-gray-400">{description}</p>

@@ -39,11 +39,11 @@ const Page5 = () => {
                 You're on your way!
               </h1>
               <div className=" flex items-center gap-1 my-4">
-                <img src={Star} alt="" className="h-10" />
-                <img src={Star} alt="" className="h-10" />
-                <img src={Star} alt="" className="h-10" />
-                <img src={Star} alt="" className="h-10" />
-                <img src={Star} alt="" className="h-10" />
+                <img src={Star} alt="" className="h-10" loading="lazy" />
+                <img src={Star} alt="" className="h-10" loading="lazy" />
+                <img src={Star} alt="" className="h-10" loading="lazy" />
+                <img src={Star} alt="" className="h-10" loading="lazy" />
+                <img src={Star} alt="" className="h-10" loading="lazy" />
               </div>
               <div className="max-w-lg flex flex-col gap-2 md:gap-6">
                 <p className="text-base italic">

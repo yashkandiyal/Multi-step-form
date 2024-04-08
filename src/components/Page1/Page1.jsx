@@ -102,7 +102,7 @@ const OptionButton = ({ icon, text, selected, onClick }) => {
         selected && "bg-gray-200"
       }`}
       onClick={onClick}>
-      <img src={icon} alt="" />
+      <img src={icon} alt="" loading="lazy"/>
       <p>{text}</p>
     </button>
   );
