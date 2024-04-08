@@ -28,7 +28,7 @@ const Page4 = () => {
 
   return (
     <div>
-      <div className="flex flex-col items-center gap-4 mt-9">
+      <div className="flex flex-col items-center gap-4 mt-9 px-3 mb-11">
         <h1 className="text-3xl font-semibold text-center">
           What is your math comfort level?
         </h1>

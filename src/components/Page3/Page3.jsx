@@ -18,7 +18,7 @@ const Page3 = () => {
   };
   return (
     <div className="flex flex-col items-center justify-center h-full mx-5 md:mx-32">
-      <div className="flex flex-col md:flex-row gap-10 md:gap-36 items-center mt-32">
+      <div className="flex flex-col md:flex-row gap-10 md:gap-36 items-center mt-9 md:mt-28">
         <img src={Pulley} alt="" className="h-80 md:mr-10" loading="lazy"/>
         <div className="flex flex-col items-center md:items-start w-full text-center md:text-left">
           <h1 className="text-3xl mb-5 font-semibold text-left">
