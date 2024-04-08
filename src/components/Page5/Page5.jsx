@@ -8,26 +8,26 @@ import Loader from "./Loader";
 const Page5 = () => {
   const navigate = useNavigate();
   const { setCurrentPage } = usePageContext();
-  const [showLogo, setShowLogo] = useState(false); // State to control logo visibility
+  const [showLoader, setShowLoader] = useState(false); // State to control logo visibility
 
   useEffect(() => {
     setCurrentPage(5); // Update currentPage when component mounts
   }, [setCurrentPage]);
 
   const handleContinue = () => {
-    setShowLogo(true); // Show logo when button is clicked
+    setShowLoader(true); // Show loader when button is clicked
 
     setTimeout(() => {
-      // After 3 seconds, hide logo and navigate to the specified page
-      setShowLogo(false);
+      // After 3 seconds, hide loader and navigate to the specified page
+      setShowLoader(false);
       navigate("/finalpage");
     }, 1500);
   };
 
   return (
     <div>
-      {showLogo ? (
-        <div className="absolute inset-0 flex items-center justify-center z-50">
+      {showLoader ? (
+        <div className="absolute inset-0 flex items-center justify-center">
           <Loader />
         </div>
       ) : (

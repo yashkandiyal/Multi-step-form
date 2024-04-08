@@ -68,13 +68,13 @@ const Page1 = () => {
             onClick={() => handleOptionSelect("lifelongLearner")}
           />
           <OptionButton
-            icon={TeacherSvg }
+            icon={TeacherSvg}
             text="Teacher"
             selected={selectedOption === "teacher"}
             onClick={() => handleOptionSelect("teacher")}
           />
           <OptionButton
-            icon={OtherSvg }
+            icon={OtherSvg}
             text="Other"
             selected={selectedOption === "other"}
             onClick={() => handleOptionSelect("other")}
@@ -107,6 +107,5 @@ const OptionButton = ({ icon, text, selected, onClick }) => {
     </button>
   );
 };
-
 
 export default Page1;

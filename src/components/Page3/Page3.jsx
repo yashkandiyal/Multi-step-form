@@ -12,7 +12,7 @@ const Page3 = () => {
   }, [setCurrentPage]);
   const handleContinue = () => {
    
-      // Navigate to Page4
+      // Navigate to Page 4
       navigate("/page4");
     
   };

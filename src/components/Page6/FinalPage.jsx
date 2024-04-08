@@ -19,7 +19,7 @@ const FinalPage = () => {
         Choose one to get started. You can switch anytime.
       </p>
       <div className="flex flex-col md:flex-row items-center gap-8">
-        <div className="md:absolute md:top-[32%] md:left-[38%] md:transform md:-translate-x-1/2 bg-yellow-400 text-xs py-1 px-2 rounded-xl font-semibold z-10">
+        <div className="md:absolute md:top-[31.5%] md:left-[36%] md:transform md:-translate-x-1/2 bg-yellow-400 text-xs py-1 px-2 rounded-xl font-semibold z-10">
           MOST POPULAR
         </div>
         <div className="relative flex items-center justify-between w-[22rem] h-32 border border-gray-200 rounded-lg px-5 py-20">

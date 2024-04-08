@@ -36,7 +36,7 @@ const Page4 = () => {
           Choose the highest level you feel confident in - you can always adjust
           later.
         </h2>
-        <div className="flex items-center gap-3">
+        <div className="flex items-center flex-wrap justify-center gap-3">
           <OptionButton
             text="Arithmetic"
             icon={Introductory}
