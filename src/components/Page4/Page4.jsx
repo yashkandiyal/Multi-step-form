@@ -29,10 +29,10 @@ const Page4 = () => {
   return (
     <div>
       <div className="flex flex-col items-center gap-4 mt-9">
-        <h1 className="text-3xl font-semibold">
+        <h1 className="text-3xl font-semibold text-center">
           What is your math comfort level?
         </h1>
-        <h2 className="text-base mb-10">
+        <h2 className="text-base mb-10 text-center">
           Choose the highest level you feel confident in - you can always adjust
           later.
         </h2>
