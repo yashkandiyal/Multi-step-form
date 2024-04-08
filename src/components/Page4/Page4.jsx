@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { usePageContext } from "../Context/ContextFunction";
 import { useNavigate } from "react-router-dom";
-
+import Introductory from './basicmaths.png'
+import Basic from './normalmaths.png'
+import Intermediate from './uppermaths.png'
+import Advanced from './highestmaths.png'
 const Page4 = () => {
   const { setCurrentPage } = usePageContext();
   const navigate = useNavigate();
@@ -36,24 +39,28 @@ const Page4 = () => {
         <div className="flex items-center gap-3">
           <OptionButton
             text="Arithmetic"
+            icon={Introductory}
             description="Introductory"
             onClick={() => handleOptionSelect("arithmetic")}
             selected={selectedOption === "arithmetic"}
           />
           <OptionButton
             text="Basic Algebra"
+            icon={Basic}
             description="Foundational"
             onClick={() => handleOptionSelect("basicAlgebra")}
             selected={selectedOption === "basicAlgebra"}
           />
           <OptionButton
             text="Intermediate Algebra"
+            icon={Intermediate}
             description="Intermediate"
             onClick={() => handleOptionSelect("intermediateAlgebra")}
             selected={selectedOption === "intermediateAlgebra"}
           />
           <OptionButton
             text="Calculus"
+            icon={Advanced}
             description="Advanced"
             onClick={() => handleOptionSelect("calculus")}
             selected={selectedOption === "calculus"}
@@ -72,17 +79,20 @@ const Page4 = () => {
   );
 };
 
-const OptionButton = ({ text, description, onClick, selected }) => {
+const OptionButton = ({ text, description, onClick, selected,icon }) => {
   return (
     <div
-      className={`border-2 border-gray-100 rounded-md h-56 w-56 flex flex-col px-5 items-center ${
+      className={`border-2 border-gray-100 rounded-md h-56 w-56 flex flex-col justify-between px-4 py-6 items-center ${
         selected ? "border-yellow-400" : ""
       }`}
       onClick={onClick}
       style={{ cursor: "pointer" }}>
-      <img src="" alt="" />
-      <h1 className="font-medium">{text}</h1>
+      <img src={icon} alt="" className="h-24" />
+      <div>
+        <h1 className="font-medium">{text}</h1>
       <p className="text-gray-400">{description}</p>
+      </div>
+      
     </div>
   );
 };

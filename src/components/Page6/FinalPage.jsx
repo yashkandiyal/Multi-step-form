@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import { useNavigate } from "react-router-dom";
 import { usePageContext } from "../Context/ContextFunction";
 import AdvancedMaths from "./advancedmaths.png";
 import BasicMaths from "./basicmaths.png";
@@ -23,7 +22,7 @@ const FinalPage = () => {
         <div className="md:absolute md:top-[32%] md:left-[38%] md:transform md:-translate-x-1/2 bg-yellow-400 text-xs py-1 px-2 rounded-xl font-semibold z-10">
           MOST POPULAR
         </div>
-        <div className="relative flex items-center justify-between w-80 h-32 border border-gray-200 rounded-lg px-3 py-20 ">
+        <div className="relative flex items-center justify-between w-[22rem] h-32 border border-gray-200 rounded-lg px-5 py-20">
           <p className="text-left">
             <span className="font-bold">Foundational Math</span> Build <br />{" "}
             your foundational skills in <br /> algebra, geometry, and <br />{" "}
@@ -32,7 +31,7 @@ const FinalPage = () => {
           <img src={BasicMaths} alt="" className="h-20 mb-4" />
         </div>
 
-        <div className="flex items-center justify-between w-80 h-32 border border-gray-200 rounded-lg px-3 py-20">
+        <div className="flex items-center justify-between w-[22rem] h-32 border border-gray-200 rounded-lg px-5 py-20">
           {" "}
           <p className="text-left">
             <span className="font-bold">Mathematical Thinking</span>
