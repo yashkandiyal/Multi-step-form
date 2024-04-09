@@ -58,7 +58,7 @@ const Page5 = () => {
             </div>
           </div>
           <button
-            className="bg-black text-white text-md px-8 py-2 rounded-md mt-5 md:mt-24"
+            className="bg-black text-white text-md px-8 py-2 rounded-md my-5 md:mt-24"
             onClick={handleContinue}>
             Continue
           </button>
